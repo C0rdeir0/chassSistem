@@ -29,9 +29,19 @@ public class chessMatch {
 	}
 	
 	private void initialSetup() {
-		pleceNewPiece('b' ,6 ,new Rook(board, Color.WHITE));
-		pleceNewPiece('e' ,8 ,new King(board, Color.BLACK));
-		pleceNewPiece('e' ,1 ,new King(board, Color.WHITE));
+		pleceNewPiece('c', 1, new Rook(board, Color.WHITE));
+        pleceNewPiece('c', 2, new Rook(board, Color.WHITE));
+        pleceNewPiece('d', 2, new Rook(board, Color.WHITE));
+        pleceNewPiece('e', 2, new Rook(board, Color.WHITE));
+        pleceNewPiece('e', 1, new Rook(board, Color.WHITE));
+        pleceNewPiece('d', 1, new King(board, Color.WHITE));
+
+        pleceNewPiece('c', 7, new Rook(board, Color.BLACK));
+        pleceNewPiece('c', 8, new Rook(board, Color.BLACK));
+        pleceNewPiece('d', 7, new Rook(board, Color.BLACK));
+        pleceNewPiece('e', 7, new Rook(board, Color.BLACK));
+        pleceNewPiece('e', 8, new Rook(board, Color.BLACK));
+        pleceNewPiece('d', 8, new King(board, Color.BLACK));
 	}
 
 }
