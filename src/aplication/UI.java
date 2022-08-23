@@ -41,10 +41,7 @@ public class UI {
 		catch (RuntimeException e) {
 			throw new InputMismatchException("erro: linha e coluna incorretos");
 		}
-		
-		
 	}
-	
 	
 	public static void printBoard(chessPiece[][] pieces) {
 		for (int i = 0; i < pieces.length; i++) {
